@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_about_you"
+            android:title="Health Status" />
+        <item
+            android:id="@+id/first_aid_info"
+            android:title="First Aid info" />
+        <item
+            android:id="@+id/my_profile"
+            android:title="Developer Info" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:title="Share App" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Medokoa</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_user_map">Map</string>
+
+    <array name="weight_unit">
+        <item>Self</item>
+        <item>Family Member</item>
+    </array>
+
+    <array name="height_unit">
+        <item>Head Injury</item>
+        <item>Pregnancy</item>
+        <item>Accident</item>
+        <item>Head Attack</item>
+    </array>
+
+</resources>

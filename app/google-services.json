@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "358274919740",
+    "firebase_url": "https://medokoa-3194d.firebaseio.com",
+    "project_id": "medokoa-3194d",
+    "storage_bucket": "medokoa-3194d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358274919740:android:7d3ea780d8c1fa85e40239",
+        "android_client_info": {
+          "package_name": "com.team.ambulancetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358274919740-8j0lg6jv0tqg9pato0ei4h23tl4ab2n0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2lZqrRNMqjfA035XlSDtbZJuNMnIQuGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358274919740-8j0lg6jv0tqg9pato0ei4h23tl4ab2n0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

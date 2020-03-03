@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "994239787391",
+    "firebase_url": "https://newname-f992a.firebaseio.com",
+    "project_id": "newname-f992a",
+    "storage_bucket": "newname-f992a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994239787391:android:fd301683936c787ceb6a4a",
+        "android_client_info": {
+          "package_name": "com.team.ambulancetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994239787391-nmod18a5rd5cceg9oobtvl6lr7ng6lf8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvOWjPL4wVRnrYNuSIfxYy1XJYRSl8WoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994239787391-nmod18a5rd5cceg9oobtvl6lr7ng6lf8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

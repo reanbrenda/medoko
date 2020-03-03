@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HealthStatusActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:elevation="5dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="?android:attr/actionBarSize" >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/close_status"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_close_white_24dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="6.5"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="Health Status"/>
+
+        <TextView
+            android:id="@+id/save_health_details"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="SAVE"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:text="Select Emergency for"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/i_height"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:hint="Other emergency"
+                android:textSize="14sp"
+                android:inputType="textShortMessage"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/unit_height"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:entries="@array/height_unit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:text="Emergency type"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/i_weight"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:hint="Other emergency type "
+                android:textSize="14sp"
+                android:inputType="textShortMessage"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/unit_weight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:entries="@array/weight_unit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:text="Age"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/i_age"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:hint="Age (in Yrs)"
+                android:textSize="14sp"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:text="Hereditary Disease (if any)"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/i_hereditary"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:textSize="14sp"
+                android:hint="Hereditary disease"
+                android:inputType="textShortMessage"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:text="Emergency for"
+                android:paddingLeft="10dp"
+                android:textColor="@color/red"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/i_chronic"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:hint="Emergency for"
+                android:textSize="14sp"
+                android:inputType="textShortMessage"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:text="Allergies (if any)"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/i_allergic"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:hint="Allergies"
+                android:textSize="14sp"
+                android:inputType="textShortMessage"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:text="Remarks"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/i_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:hint=" "
+                android:textSize="14sp"
+                android:inputType="textShortMessage"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

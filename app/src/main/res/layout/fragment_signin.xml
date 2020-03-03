@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginBottom="40dp"
+            android:text="Welcome Back :)"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/ic_email_black_24dp" />
+
+            <EditText
+                android:id="@+id/iemail_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="EMAIL"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColorHint="#616161"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/ic_lock_black_24dp" />
+
+            <EditText
+                android:id="@+id/iPassword_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="PASSWORD"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColorHint="#616161"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox_password_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:buttonTint="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginLeft="17dp"
+            android:text="  Show Password" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_login"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:focusable="false"
+            android:indeterminate="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:theme="@style/LinearProgress"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password ?"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="SIGN IN"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
